@@ -1,0 +1,64 @@
+
+.ui-slider-range {
+    background: rgb(139, 177, 175);
+}
+
+.ui-slider-horizontal {
+    width: 100%;
+    height: 9.2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8.9px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.ui-slider-range {
+    box-shadow: 0px 0px 8px rgba(1, 1, 1, 0.5), 0px 0px 0px rgba(1, 1, 1, 0.5);
+    background: rgba(255, 255, 255, 1);
+}
+
+.ui-slider-handle {
+    border: 1px solid rgba(0, 0, 0, 1) !important;
+    height: 16px !important;
+    width: 16px !important;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1) !important;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0px !important;
+}
+
+.progress .ui-slider-horizontal {
+    width: 100%;
+    height: 16px !important;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.356), 0px 0px 1px 1px rgba(0, 0, 0, 0.356);
+    background: rgba(255, 255, 255, 0.103);
+    border-radius: 25px;
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+.progress .ui-slider-handle {
+    border: 0px solid rgba(255, 255, 255, 0) !important;
+    height: 12px !important;
+    width: 12px !important;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0) !important;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 3.5px !important;
+}
+
+.progress .ui-slider-range {
+    box-shadow: inset 0px 0px 1px 1px rgba(167, 252, 255, 0.685), 0px 0px 1px 1px rgba(0, 0, 0, 0.425);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.226);
+}
+
+fieldset.sliderfield {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}

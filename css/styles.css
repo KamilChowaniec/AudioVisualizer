@@ -1,0 +1,257 @@
+@import "tabs.css";
+@import "slider.css";
+@import "colorpicker.css";
+* {
+    pointer-events: auto;
+}
+
+legend {
+    position: relative;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+
+fieldset div {
+    margin-bottom: 4px;
+}
+
+div.flexdiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mainDiv {
+    display: flex;
+    overflow: hidden;
+}
+
+#mainSpan {
+    pointer-events: none;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+#upperSpan {
+    pointer-events: none;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+}
+
+#middleSpan {
+    pointer-events: none;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#bottomSpan {
+    pointer-events: none;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+#shbut {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 40px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.384);
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 120%;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+#showTime {
+    float: right;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 0px 1px  rgb(0, 0, 0);
+}
+
+#songTitle {
+    float: left;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 0px 1px  rgb(0, 0, 0);
+}
+
+#shbut:hover {
+    background: rgba(255, 255, 255, 0.484);
+}
+
+#shbut:active {
+    background: rgba(255, 255, 255, 0.637);
+}
+
+#hoverBox {
+    background: rgba(255, 255, 255, 0.384);
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+#errorBox {
+    position: absolute;
+    background: rgba(255, 0, 0, 0.384);
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 3px;
+    color: rgb(255, 0, 0);
+    font-size: 120%;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#errorText{
+    word-wrap:break-word;
+    text-align:center;
+    font-weight: normal;
+    max-width:20em;
+    padding:0 5px; 
+}
+
+#slideupbtn{
+    width:100%;
+}
+
+.slidebtn {
+    background: transparent;
+    border: none;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.slidebtn:hover {
+    background: rgba(255, 255, 255, 0.048);
+}
+
+.slidebtn:active {
+    background: rgba(255, 255, 255, 0.103);
+}
+
+#uploadPanelContainer{
+    position: absolute;
+    left:0;
+    top:60%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 120%;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    z-index: 500;
+}
+
+#uploadPanel{
+    color: white;
+    font-size: 120%;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label.fileInput {
+    background: rgba(255, 255, 255, 0.308);
+    border: rgb(0, 89, 255);
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.308);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px;
+    transition: 200ms;
+    cursor: pointer;
+    padding: 5px;
+    margin: 8px 10px;
+    width:90%;
+    box-sizing: border-box;
+}
+
+label.fileInput:hover {
+    background: rgba(255, 255, 255, 0.288);
+    box-shadow: 0px 0px 2px 5px rgba(255, 255, 255, 0.288);
+    transition: 200ms;
+}
+
+label.fileInput:active {
+    background: rgba(255, 255, 255, 0.363);
+    box-shadow: 0px 0px 2px 5px rgba(255, 255, 255, 0.363);
+    transition: 50ms;
+}
+
+#mainDiv {
+    background-color: rgb(0, 0, 0);
+    width: 1500px;
+    height: 700px;
+    position: absolute;
+}
+
+#inputPanel {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.363);
+    box-shadow: 0px 0px 1px 2px grey;
+    border:1px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    margin: 0px;
+}
+
+
+
